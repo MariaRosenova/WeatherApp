@@ -10,14 +10,22 @@ body {
   overflow-x: hidden;
 }
 
+.search-img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 1;
+  left: 1;
+}
+
 .search-bar {
-  background-image: url("https://images.unsplash.com/photo-1563974318767-a4de855d7b43?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  min-height: 1000px;
-  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100%;
+  background-attachment: absolute;
   background-position: center;
   background-repeat: no-repeat;
 
-  margin: 0;
+  margin: auto;
   padding: 0;
 
   z-index: -1;
