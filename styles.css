@@ -8,57 +8,64 @@ html,
 body {
   margin: 0;
   overflow-x: hidden;
+  background: #000;
 }
 
-.search-img {
+.search-background video {
   width: 100%;
-  height: 100%;
-  position: relative;
-  top: 1;
-  left: 1;
+  top: 1px;
+  left: 1px;
+  opacity: 0.85;
 }
 
 .search-bar {
-  min-height: 100vh;
   width: 100%;
-  background-attachment: absolute;
+  height: 100vh;
+  position: fixed;
+  opacity: 1;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-
-  margin: auto;
-  padding: 0;
-
-  z-index: -1;
-  transition: transform 0.5s ease;
-}
-
-.search-bar {
-  position: relative;
+  background-size: cover;
+  transition: opacity 0.1s ease;
 }
 
 .title-search-bar {
   position: absolute;
-  top: 120px;
+  top: 170px;
   left: 30%;
   font-size: 50pt;
 }
 
 #input-bar {
+  position: absolute;
   margin: 20% 22%;
   width: 60%;
   height: 80px;
   border: 3px solid white;
   border-radius: 15px;
   padding: 10px;
-  opacity: 0.7;
+  top: 1px;
 }
 
+.img-search {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: 312px;
+  left: 77%;
+}
+
+/* Second side - weather*/
+
 main {
-  transform: translate3d(0, -50%, 0);
-  z-index: 1;
-  background-image: url("https://images.unsplash.com/photo-1419833173245-f59e1b93f9ee?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  position: relative;
+  top: 100vh;
+  width: 100%;
+  min-height: 100vh;
+
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-
-
+  background-size: cover;
 }
