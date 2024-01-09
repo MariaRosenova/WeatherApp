@@ -69,8 +69,7 @@ main {
   width: 100%;
   min-height: 100vh;
   box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
-.day-month {
-  display: flex;
-}
