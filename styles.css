@@ -70,6 +70,31 @@ main {
   min-height: 100vh;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 40% 50%;
 }
 
+.day-month {
+  display: flex;
+  height: 100px;
+  font-size: 30px;
+}
+
+.day-month-img {
+  width: 100px;
+  height: 100px;
+  margin-top: -27px;
+}
+
+.now-cast {
+  height: 329px;
+  margin-top: 200px;
+  margin-left: 25px;
+}
+
+.degrees-now {
+  font-size: 90px;
+}
+
+.city-country, .real-time-weather {
+  font-size: 25px;
+}
