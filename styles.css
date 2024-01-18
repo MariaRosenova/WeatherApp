@@ -72,7 +72,7 @@ main {
   display: grid;
   gap: 30%;
   grid-template-columns: 40% 50%;
-  padding: 10%;
+  padding-bottom: 10px;
 }
 
 .day-month {
@@ -104,34 +104,51 @@ main {
 
 /* Weather side */
 .weather-details {
-  width: 182px;
-}
-
-.wind-direction {
   display: flex;
   flex-direction: column;
+  gap: 50px;
+  width: 350px;
+  background-color: #0f2c51;
+
 }
 
 .wind {
   display: flex;
   flex-direction: row;
-  gap: 74px;
+  flex-direction: end;
+  gap: 80px;
+}
+
+.wind-direction, .wind-speed {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.wind img, .wind-speed img {
+  width: 30px;
+  height: 30px;
+  margin-left: 25px;
 }
 
 .choose-view {
   display: flex; 
   flex-direction: row;
-  justify-content: space-between;
+  gap: 70px;
 }
 
 .daily-view {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 70px;
 }
 
 .weather, .hours {
   list-style: none;
+}
+
+.daily-view li:not(:first-child) {
+  margin-top: 20px;
 }
 
 .weather li {
@@ -139,3 +156,19 @@ main {
   flex-direction: row;
   gap: 5px;
 }
+
+.upcoming-weather {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+p, li {
+  font-size: 25px;
+}
+
+.weather img {
+  width: 30px;
+  height: 30px
+}
+
