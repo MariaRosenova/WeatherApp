@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,700&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,6 +12,7 @@ body {
   /* overflow-x: hidden; */
   background: #0c2340;
   padding-bottom: 100px;
+  font-family: "Roboto", sans-serif;
 }
 
 .search-background video {
@@ -37,7 +40,9 @@ body {
   position: absolute;
   top: 170px;
   left: 30%;
+  font-weight: 700;
   font-size: 50pt;
+  color: white;
 }
 
 #input-bar {
@@ -53,7 +58,6 @@ body {
 
 .img-search {
   position: absolute;
-  height: 40px;
   width: 40px;
   top: 312px;
   left: 77%;
@@ -95,11 +99,21 @@ main {
 }
 
 .degrees-now {
-  font-size: 90px;
+  font-size: 110px;
+  font-weight: 700;
 }
 
-.city-country, .real-time-weather {
+.city-country,
+.real-time-weather {
   font-size: 25px;
+}
+
+.city-country {
+  font-weight: 300;
+}
+
+.real-time-weather {
+  font-weight: 200;
 }
 
 /* Weather side */
@@ -108,42 +122,42 @@ main {
   flex-direction: column;
   gap: 50px;
   width: 350px;
-  background-color: #0f2c51;
-
 }
 
 .wind {
   display: flex;
   flex-direction: row;
-  flex-direction: end;
-  gap: 80px;
+  gap: 100px;
 }
 
-.wind-direction, .wind-speed {
+.wind-direction,
+.wind-speed {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
 
-.wind img, .wind-speed img {
+.wind img,
+.wind-speed img {
   width: 30px;
   height: 30px;
   margin-left: 25px;
 }
 
 .choose-view {
-  display: flex; 
+  display: flex;
   flex-direction: row;
-  gap: 70px;
+  gap: 90px;
 }
 
 .daily-view {
   display: flex;
   flex-direction: row;
-  gap: 70px;
+  gap: 75px;
 }
 
-.weather, .hours {
+.weather,
+.hours {
   list-style: none;
 }
 
@@ -154,7 +168,7 @@ main {
 .weather li {
   display: flex;
   flex-direction: row;
-  gap: 5px;
+  gap: 8px;
 }
 
 .upcoming-weather {
@@ -163,12 +177,29 @@ main {
   gap: 60px;
 }
 
-p, li {
+p,
+li {
   font-size: 25px;
 }
 
 .weather img {
   width: 30px;
-  height: 30px
+  height: 30px;
 }
 
+.line {
+  position: absolute;
+  top: 135px;
+  right: 0px;
+  border: 1px solid #d3d3d3;
+  width: 525px;
+  opacity: 0.1;
+}
+
+.km {
+  margin-left: 6px;
+}
+
+.day-month {
+  font-family: 200;
+}
